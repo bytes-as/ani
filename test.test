@@ -1,0 +1,2 @@
+./s.sh asdf ./corpus/LMI_w1000_p1000 ${1} ./corpus/word_count ./corpus/DT_hin ${2} ./corpus/hindi_bigram__PruneFeaturesPerWord_1000__WordCount 10 10 ./corpus/en-hi.txt
+
