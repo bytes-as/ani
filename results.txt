@@ -1,0 +1,6 @@
+english : 100000  | hindi : 1000000
+Supervised      : Coverage:  2.03%  Accuracy:  0.78%
+Semi Supervised : Coverage:  2.03%  Accuracy:  0.16%
+Un Supervised   : Coverage:  2.03%  Accuracy:  0.47%
+
+

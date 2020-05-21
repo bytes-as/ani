@@ -1,2 +1,12 @@
-./s.sh asdf ./corpus/LMI_w1000_p1000 ${1} ./corpus/word_count ./corpus/DT_hin ${2} ./corpus/hindi_bigram__PruneFeaturesPerWord_1000__WordCount 10 10 ./corpus/en-hi.txt
+ROOT="/home/bt0/16CS10008/ani"
+ONE=100000
+TWO=1000000
+$ROOT/s.sh $ROOT \
+	$ROOT/corpus/LMI_w1000_p1000 ${ONE} \
+	$ROOT/corpus/word_count \
+	$ROOT/corpus/DT_hin ${TWO} \
+	$ROOT/corpus/hindi_bigram__PruneFeaturesPerWord_1000__WordCount \
+	10 \
+	10 \
+	$ROOT/corpus/en-hi.txt
 
