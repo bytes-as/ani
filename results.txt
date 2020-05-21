@@ -3,4 +3,8 @@ Supervised      : Coverage:  2.03%  Accuracy:  0.78%
 Semi Supervised : Coverage:  2.03%  Accuracy:  0.16%
 Un Supervised   : Coverage:  2.03%  Accuracy:  0.47%
 
+english : 50000   | hindi : 500000
+Supervised      : Coverage:  2.03%  Accuracy: 13.33%
+Semi Supervised : Coverage:  2.03%  Accuracy:  0.16%
+Un Supervised   : Coverage:  2.03%  Accuracy:  0.16%
 

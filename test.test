@@ -1,6 +1,6 @@
 ROOT="/home/bt0/16CS10008/ani"
-ONE=100000
-TWO=1000000
+ONE=50000
+TWO=500000
 $ROOT/s.sh $ROOT \
 	$ROOT/corpus/LMI_w1000_p1000 ${ONE} \
 	$ROOT/corpus/word_count \

@@ -71,9 +71,7 @@ def main():
     # Read input embeddings
     srcfile = open(args.src_embeddings, encoding=args.encoding, errors='surrogateescape')
     trgfile = open(args.trg_embeddings, encoding=args.encoding, errors='surrogateescape')
-    print('reading sources file')
     src_words, x = embeddings.read(srcfile, dtype=dtype)
-    print('reading target file')
     trg_words, z = embeddings.read(trgfile, dtype=dtype)
 
     # NumPy/CuPy management
