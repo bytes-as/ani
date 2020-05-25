@@ -1,10 +1,39 @@
-english : 100000  | hindi : 1000000
+        english : 100000  -- hindi : 1000000
 Supervised      : Coverage:  2.03%  Accuracy:  0.78%
 Semi Supervised : Coverage:  2.03%  Accuracy:  0.16%
 Un Supervised   : Coverage:  2.03%  Accuracy:  0.47%
 
-english : 50000   | hindi : 500000
-Supervised      : Coverage:  2.03%  Accuracy: 13.33%
-Semi Supervised : Coverage:  2.03%  Accuracy:  0.16%
-Un Supervised   : Coverage:  2.03%  Accuracy:  0.16%
+         English : 10000 -- hindi : 100000
+Supervised           :  Coverage:  2.03%  Accuracy: 13.80%
+Semi Supervised      :  Coverage:  2.03%  Accuracy:  0.00%
+Un Supervised        :  Coverage:  2.03%  Accuracy:  0.31%
+Merged Walks (529GB) :  Coverage:  2.03%  Accuracy:  0.00%
 
+        english : 50000   -- hindi : 500000
+Supervised           : Coverage:  2.03%  Accuracy: 13.33%
+Semi Supervised      : Coverage:  2.03%  Accuracy:  0.16%
+Un Supervised        : Coverage:  2.03%  Accuracy:  0.16%
+
+          English : 5000  --  hindi : 50000
+Supervised           :  Coverage:  2.03%  Accuracy:  3.72%
+Un Supervised        :  Coverage:  2.03%  Accuracy:  0.16%
+Semi Supervised      :  Coverage:  2.03%  Accuracy:  0.62%
+Merged walks (278GB) :  Coverage:  2.03%  Accuracy:  0.16%
+
+
+    English : 1000 (67MB) -- Hindi : 5000 (52MB)
+Supervised           :  Coverage: 28.57%  Accuracy: 16.67%
+Un Supervised        :  Coverage: 28.57%  Accuracy:  0.00%
+Semi Supervised      :  Coverage: 28.57%  Accuracy:  0.00%
+Merged Walks  (81GB) :  Coverage: 28.57%  Accuracy:  0.00%
+
+
+    English : 1000 (67MB) -- Hindi : 5000 (52MB)
+Supervised           :  Coverage: 28.57%  Accuracy:  0.00%
+Un Supervised        :  Coverage: 28.57%  Accuracy:  0.00%
+Semi Supervised      :  Coverage: 28.57%  Accuracy:  0.00%
+
+    English : 1000 (5.2GB) -- Hindi : 5000 (2.5GB)
+Supervised           :  Coverage:  3.04%  Accuracy: 75.97%
+Semi Supervised      :  Coverage:  3.04%  Accuracy:  3.10%
+Un Supervised        :  Coverage:  3.04%  Accuracy:  0.78%

@@ -452,7 +452,7 @@ def process(args):
     print('walks[0]:',walks[0])
     with open(args.walks_output, 'w') as writeFile:
       for walk in walks:
-        writeFile.write('\t'.join([str(x) for x in walk]) + '\n')
+        if random.random() > args.chance : writeFile.write('\t'.join([str(x) for x in walk]) + '\n')
     print('walks writing done....')
     exit()
   else:
@@ -475,7 +475,7 @@ def process(args):
     print('walks[0]:', walks[0])
     with open(args.walks_output, 'w') as writeFile:
       for walk in walks_corpus:
-        writeFile.write('\t'.join([str(x) for x in walk]) + '\n')
+        if random.random() > args.chance : writeFile.write('\t'.join([str(x) for x in walk]) + '\n')
 
 def main():
   parser = ArgumentParser("deepwalk",
@@ -531,6 +531,9 @@ def main():
 
   parser.add_argument('--OVERWRITE', default=False, action='store_true',
                       help='Enable overwriteing the output file.')
+
+  parser.add_argument('--chance', default=0.5, type=float,
+                      help='probability of writing walk in the output file.')
 
   args = parser.parse_args()
   if os.path.isfile(args.walks_output) and not args.OVERWRITE:

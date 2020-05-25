@@ -26,7 +26,7 @@ def processFrequencies(args):
 			try:
 				frequencies[tokens[0]] = int(tokens[1])
 			except:
-				print('Ignoring line with tokens: {}'.format(tokens))
+				# print('Ignoring line with tokens: {}'.format(tokens))
 				continue
 			if tokens[0] in word2int: continue
 			word2int[tokens[0]] = count

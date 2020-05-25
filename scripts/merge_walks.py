@@ -1,6 +1,7 @@
 import os
 import pickle
 import argparse
+import random
 
 def parser():
 	parser = argparse.ArgumentParser(description='Merge walks')
@@ -12,6 +13,7 @@ def parser():
 	parser.add_argument('--OUTPUT_DELIMITER', help='delimiter for the output merged walks', default='\t')
 	parser.add_argument('--DICT_DELIMITER', help='delimiter for output walks file. Default is tab', default='\t')
 	parser.add_argument('--OVERWRITE', help='Enables overwriting the output file', action='store_true', default=False)
+	parser.add_argument('--CHANCE', help='probability of not writing the sentence in final file', type=float, default=0.8)
 	return parser.parse_args()
 
 def main(args):
@@ -56,13 +58,14 @@ def main(args):
 		for walk_index1 in invert1[token]:
 			for translated_word in translation1[token]:
 				if translated_word not in invert2: continue
+				if random.random() > args.CHANCE: continue
 				for walk_index2 in invert2[translated_word]:
 					count += 1
 					output.write(args.OUTPUT_DELIMITER.join(walks1[walk_index1]))
 					output.write(args.OUTPUT_DELIMITER)
 					output.write(args.OUTPUT_DELIMITER.join(walks2[walk_index2]))
 					output.write('\n')
-					if count % 10000000 == 0 :print('{}/{} walks written successfully'.format(count, len(walks1)*len(walks2)))
+					if count % 100000000 == 0 :print('{}/{} walks written successfully'.format(count, len(walks1)*len(walks2)))
 	print('Merged completed in file:  {}'.format(args.OUTPUT))
 
 if __name__ == '__main__':
